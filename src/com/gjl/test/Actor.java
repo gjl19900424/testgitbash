@@ -18,7 +18,6 @@ public class Actor extends Thread {
 				}
     		}
 		}
-//    	Thread.stop();
     	System.out.println(getName()+"的演出结束了。");	
     }
     
@@ -36,7 +35,6 @@ class Actress implements Runnable{
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
     	System.out.println(Thread.currentThread().getName()+"是一个演员");
     	int count=0;
     	boolean keepRunning = true;
@@ -49,7 +47,6 @@ class Actress implements Runnable{
     			try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
     		}
